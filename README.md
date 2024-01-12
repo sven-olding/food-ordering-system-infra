@@ -15,12 +15,12 @@ helm install local-confluent-kafka helm/cp-helm-charts --version 0.6.0
 ### Start postrges
 
 ```bash
-kubectl apply -f postgres.yaml
+kubectl apply -f postgres-deployment.yaml
 ```
 
 ### Start food-ordering-system
 ```bash
-kubectl apply -f food-ordering-system.yaml
+kubectl apply -f application-deployment-local.yaml
 ```
 
 ## Stopping
